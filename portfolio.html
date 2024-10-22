@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assist/tailwind-css/tailwind.config.js">
+    <script>
+      // Simple JavaScript for FAQ accordion functionality
+      function toggleFAQ(id) {
+        var element = document.getElementById(id);
+        element.classList.toggle('hidden');
+      }
+    </script>
+
+</head>
+
+  <!-- Header  -->
+  <body class="bg-white min-h-screen items-center justify-center">
+    <header>
+      <div class=" navbar bg-black bg-opacity-50 text-white fixed">
+        <div class="navbar-start">
+          <div class="navbar-start flex-1">
+            <a href="#" class="text-white text-xl font-bold">LOGO</a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost pl-3 lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <div>
+              <ul 
+              tabindex="0"
+              class="menu menu-sm dropdown-content text-black bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a href="#" class="hover:text-blue-500">Home</a></li>
+              <li><a href="#" class="hover:text-blue-500">About</a></li>
+              <li><a href="#" class="hover:text-blue-500">Services</a></li>
+              <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+              <li><a href="#" class="text-blue-500"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#" class="text-blue-500"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">About</a></li>
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+            <li><a href="#" class="text-blue-500"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" class="text-blue-500"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+     <!-- Header Section -->
+    <section class="py-56 pl-44 flex h-screen bg-cover bg-no-repeat bg-center" style="background-image: url('assist/images/header-background.jpg');">
+      <div class="">
+          <h1 class="text-4xl text-white lg:text-6xl font-bold mb-4">I love to create <br> beautiful and <br> efficient websites</h1>
+          <div class="flex space-x-4">
+              <a href="#" class="bg-blue-600 hover:bg-blue-800  justify-center text-white px-6 md:px-8 lg:px-12 py-3 rounded-lg font-semibold text-[15px] lg:text-xl">Discover</a>
+              <a href="#" class="border-2 hover:bg-opacity-15 hover:bg-black  justify-center text-white border-none px-3 md:px-5 lg:px-8 py-3 rounded-lg font-semibold flex items-center space-x-2">
+                <i class="fas fa-user"></i>
+                <span class="lg:text-xl text-[15px]">Contact Me</span>
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <!-- Bio and Experience Section -->
+  <section class="bg-gradient-to-r from-gray-50 via-blue-50 to-pink-50 py-16">
+    <div class="container mx-auto flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0 lg:space-x-16">
+        <!-- Bio -->
+        <div class="lg:w-1/2">
+            <h2 class="text-3xl font-bold mb-4">Hi there I'm Swapna,</h2>
+            <p class="text-lg leading-relaxed">
+                And I love to create beautiful and efficient websites for my customers. 
+                I love going through the entire process with the customer from concept, to design and then development and launch.
+            </p>
+        </div>
+        <!-- Experience Timeline -->
+        <div class="lg:w-1/2 space-y-4 text-lg">
+            <div class="flex">
+              <div>
+                <p class="text-blue-600 font-bold">2019 - PRESENT</p>
+                <p class="font-semibold">Freelance Web Developer</p>
+                <p class="text-gray-700">Working happily on my own web projects</p>
+              </div>
+              <div>
+                <p class="text-blue-600 font-bold">2018 - 2019</p>
+                <p class="font-semibold">Lead Web Developer</p>
+                <p class="text-gray-700">Beautiful project for a major digital agency</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div>
+                <p class="text-blue-600 font-bold">2017 - 2018</p>
+                <p class="font-semibold">Senior Web Designer</p>
+                <p class="text-gray-700">Inhouse web designer for ecommerce firm</p>
+              </div>
+              <div>
+                <p class="text-blue-600 font-bold">2016 - 2017</p>
+                <p class="font-semibold">Junior Web Designer</p>
+                <p class="text-gray-700">Junior web designer for small web agency</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Offered Services</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+            Web design and development have been my bread and butter for more than 5 years. During that time I've discovered that I can help startups and companies with the following services.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Design Service -->
+            <div class="p-6 border rounded-lg">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-gem fa-3x"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Design</h3>
+                <p class="text-gray-600">
+                    Successful online projects start with good design. It establishes a solid foundation for future development and allows for long-term growth.
+                </p>
+            </div>
+            
+            <!-- Development Service -->
+            <div class="p-6 border rounded-lg">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-code fa-3x"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Development</h3>
+                <p class="text-gray-600">
+                    I can code my own designs or even use the customer’s design as a base. My focus is to generate clean code that's well structured for reliability.
+                </p>
+            </div>
+
+            <!-- SEO Service -->
+            <div class="p-6 border rounded-lg">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-display service-icon fa-3x"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Basic SEO</h3>
+                <p class="text-gray-600">
+                    I can set up your project to use basic SEO principles, which will push your project to the first page on search engines and save you ad money.
+                </p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <div class="bg-gradient-to-r from-gray-50 via-blue-50 to-pink-50 mx-auto flex items-center py-12">
+    <!-- Left Image Section -->
+    <div class="w-1/2">
+      <img src="assist/images/details-background.jpg" alt="Person working" class="rounded-lg ">
+    </div>
+
+    <!-- Right Text Section -->
+    <div class="w-1/2 pl-12">
+      <h2 class="text-xl lg:text-3xl font-bold mb-1 lg:mb-4">Why Work With Me</h2>
+      <p class="text-gray-700 text-[14px] lg:text-[16.3px] mb-2 lg:mb-6">
+        I am a great communicator and love to invest the necessary <br> time to understand the customer's problem very well.
+      </p>
+
+      <!-- Design Tools -->
+      <h3 class="text-[14px] lg:text-2xl font-bold mb-1 lg:mb-2 pt-2">DESIGN TOOLS</h3>
+      <p class="text-gray-600 text-[14px] lg:text-[16.3px] mb-1 lg:mb-4">
+        My favorite design tools are Photoshop and Illustrator but I <br> can create designs in Figma, Sketch and Adobe XD too.
+      </p>
+
+      <!-- Development Skills -->
+      <h3 class="text-[14px] lg:text-2xl font-bold mb-1 lg:mb-2 pt-2">DEVELOPMENT SKILLS</h3>
+      <p class="text-gray-600 text-[14px] lg:text-[16.3px] mb-1 lg:mb-4">
+        I am familiar and work on a daily basis with HTML, CSS, <br> JavaScript, Bootstrap and other modern frameworks.
+      </p>
+
+      <!-- Icon Section -->
+      <div class="grid grid-cols-3 flex lg:flex lg:space-x-4 pt-2">
+        <img src="assist/images/details-icon-photoshop.png" alt="Photoshop" class="h-10 w-10">
+        <img src="assist/images/details-icon-illustrator.png" alt="Illustrator" class="h-10 w-10">
+        <img src="assist/images/details-icon-html.png" alt="HTML" class="h-10 w-10">
+        <img src="assist/images/details-icon-css.png" alt="CSS" class="h-10 w-10">
+        <img src="assist/images/details-icon-bootstrap.png" alt="Bootstrap" class="h-10 w-10">
+        <img src="assist/images/details-icon-javascript.png" alt="JavaScript" class="h-10 w-10">
+      </div>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <div class="container mx-auto py-12 px-4">
+    <!-- Section Title -->
+    <h2 class="text-xl lg:text-3xl text-center font-bold mb-2 lg:mb-6">Delivered projects</h2>
+    <p class="text-center text-gray-600 mt-4 mb-12">
+      Listed below are some of the most representative projects I’ve worked on. They range from basic web design for presentation sites to advanced web development for online shops.
+    </p>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="bg-white rounded-lg  overflow-hidden">
+        <img src="assist/images/project-1.jpg" alt="Project 1" class="w-full">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Jumbotron, <span class="font-bold">Project:</span> web design for their corporate websites and landing pages for Swapnaeting campaigns <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-lg  overflow-hidden">
+        <img src="assist/images/project-2.jpg" alt="Project 2" class="w-full">
+        <div class="p-6 pb-5">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Carsrepo, <span class="font-bold">Project:</span> designed and developed modern platform for purchasing second hand cars online <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-lg  overflow-hidden">
+        <img src="assist/images/project-3.jpg" alt="Project 3" class="w-full">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Truevideo, <span class="font-bold">Project:</span> created a custom video editing and upload web app for this awesome team <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-lg  overflow-hidden">
+        <img src="assist/images/project-4.jpg" alt="Project 3" class="w-full">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Truevideo, <span class="font-bold">Project:</span> created a custom video editing and upload web app for this awesome team <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <!-- <div class="container mx-auto py-12 px-4">
+    <div class="bg-blue-900 rounded-lg overflow-hidden relative text-white p-12">
+      <img src="main-project-image.jpg" alt="Main Project" class="absolute inset-0 w-full h-full object-cover opacity-10 z-0">
+      <div class="relative z-10">
+        <h1 class="text-4xl font-bold mb-4">Gemdev is a free HTML template designed for your web products</h1>
+        <p class="mb-6">Use Gemdev to create awesome websites for your products, services, and ideas in a short amount of time.</p>
+        <a href="#" class="inline-block bg-white text-blue-900 py-2 px-4 rounded-lg font-bold">Discover</a>
+      </div>
+    </div>
+    <p class="text-gray-600 mt-4">For: Evolosim, Project: complete redesign of their corporate website and platform update for their online shop <a href="#" class="text-indigo-600 underline">details</a></p>
+  </div> -->
+
+  <!-- Projects Grid -->
+  <div class="container mx-auto mb-8 py-12 px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="rounded-lg  overflow-hidden">
+        <img src="assist/images/work-1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Zigoland, <span class="font-bold">Project:</span> started a new website from ground up for a new product <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="rounded-lg  overflow-hidden">
+        <img src="assist/images/work-2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Visodream, <span class="font-bold">Project:</span> developed a new forum for the Visodream community <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="rounded-lg  overflow-hidden">
+        <img src="assist/images/work-3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Primoday, <span class="font-bold">Project:</span> complete redesign of their corporate website and platform <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="rounded-lg  overflow-hidden">
+        <img src="assist/images/work-4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Nextlite, <span class="font-bold">Project:</span> created a custom video editing and upload web app <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="rounded-lg  overflow-hidden">
+        <img src="assist/images/work-5.jpg" alt="Project 5" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Syncnow, <span class="font-bold">Project:</span> web design for their corporate websites and landing pages <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="rounded-lg  overflow-hidden">
+        <img src="assist/images/work-6.jpg" alt="Project 6" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <p class="text-gray-600"><span class="font-bold">For:</span> Shifter, <span class="font-bold">Project:</span> started a new website from ground up for a new product <a href="#" class="text-indigo-600 underline">details</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="border-2">
+
+  <!-- Testimonials Section -->
+  <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-center text-2xl md-text-2xl lg:text-3xl font-extrabold text-gray-900">A few words from people that <br> chose to work with me</h2>
+    
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-6 rounded-lg ">
+        <div class="flex items-center mb-4">
+          <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Samantha Bloom">
+          <div class="ml-4">
+            <h3 class="text-lg font-semibold text-gray-900">Samantha Bloom</h3>
+            <p class="text-sm text-gray-500">Team Leader - Syncnow</p>
+          </div>
+        </div>
+        <p class="text-gray-600">"Swapna is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that."</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-6 rounded-lg ">
+        <div class="flex items-center mb-4">
+          <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Rowling">
+          <div class="ml-4">
+            <h3 class="text-lg font-semibold text-gray-900">John Rowling</h3>
+            <p class="text-sm text-gray-500">Swapnaeting Manager - Nexlite</p>
+          </div>
+        </div>
+        <p class="text-gray-600">"Loved to work with Swapna, he's such an awesome developer with great attention to details. He also has a great eye for design."</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-6 rounded-lg ">
+        <div class="flex items-center mb-4">
+          <img class="w-12 h-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lana Smith">
+          <div class="ml-4">
+            <h3 class="text-lg font-semibold text-gray-900">Lana Smith</h3>
+            <p class="text-sm text-gray-500">General Manager - Shifter</p>
+          </div>
+        </div>
+        <p class="text-gray-600">"So glad we started working with Swapna. We've used many times his design and development skills for our inhouse online projects."</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-center text-3xl font-extrabold text-gray-900 mb-8">Frequent questions</h2>
+
+    <!-- FAQ Item 1 -->
+    <div class="py-4">
+      <button class="w-full " onclick="toggleFAQ('faq1')">
+        <span class="text-2xl text-gray-600"><i class="fa-solid fa-angle-up"></i></span>
+        <span class="text-lg font-medium text-gray-900">How can I contact you and quickly get a quote for my online project?</span>
+      </button>
+      <div id="faq1" class="mt-2 text-gray-600 hidden">
+        The best way to reach me is through the contact form or by messaging me on my social media accounts. For a fast quote, make sure you provide many project details.
+      </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="py-4">
+      <button class="w-full" onclick="toggleFAQ('faq2')">
+        <span class="text-2xl text-gray-600"><i class="fa-solid fa-angle-up"></i></span>
+        <span class="text-lg font-medium text-gray-900">Do you create designs from the ground up or are you using themes?</span>
+      </button>
+      <div id="faq2" class="mt-2 text-gray-600 hidden">
+        I create custom designs from the ground up to meet your specific needs. However, if preferred, I can also work with themes.
+      </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="py-4">
+      <button class="w-full " onclick="toggleFAQ('faq3')">
+        <span class="text-2xl text-gray-600"><i class="fa-solid fa-angle-up"></i></span>
+        <span class="text-lg font-medium text-gray-900">Will I receive any included maintenance or warranty after project delivery?</span>
+      </button>
+      <div id="faq3" class="mt-2 text-gray-600 hidden">
+        Yes, I offer post-delivery support and maintenance for a limited period. Extended maintenance packages are also available.
+      </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="py-4">
+      <button class="w-full " onclick="toggleFAQ('faq4')">
+        <span class="text-2xl text-gray-600"><i class="fa-solid fa-angle-up"></i></span>
+        <span class="text-lg font-medium text-gray-900">If something goes wrong with the project, can I have my money back?</span>
+      </button>
+      <div id="faq4" class="mt-2 text-gray-600 hidden">
+        I strive for customer satisfaction. Refunds are available under specific conditions, which can be discussed in the contract.
+      </div>
+    </div>
+
+    <!-- FAQ Item 5 -->
+    <div class="py-4">
+      <button class="w-full " onclick="toggleFAQ('faq5')">
+        <span class="text-2xl text-gray-600"><i class="fa-solid fa-angle-up"></i></span>
+        <span class="text-lg font-medium text-gray-900">What's your preferred method of payment and do you need an advance?</span>
+      </button>
+      <div id="faq5" class="mt-2 text-center text-gray-600 hidden">
+        My preferred payment methods are bank transfer or PayPal. An advance is usually required to begin the project.
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-gray-100 max-w-full mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+    <!-- Heading -->
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Contact details</h2>
+    <p class="text-gray-500 mb-8">
+      For any type of online project please don't hesitate to get in touch with me.
+      The fastest way is to send me your message using the following email 
+      <a href="mailto:contact@domain.com" class="text-blue-500 underline">contact@domain.com</a>
+    </p>
+
+    <!-- Contact Form -->
+    <form action="#" method="POST" class="space-y-4 max-w-lg mx-auto">
+      <!-- Name Input -->
+      <div>
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+      </div>
+
+      <!-- Email Input -->
+      <div>
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+      </div>
+
+      <!-- Project Details Input -->
+      <div>
+        <label for="message" class="sr-only">Project details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Project details" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Start -->
+  <footer class="footer bg-gradient-to-r from-gray-50 via-blue-50 via-blue-100 via-blue-50 to-gray-50 hover:bg-gray-500 text-base-900 p-10">
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Swapnaeting</a>
+      <a class="link link-hover">Advertisement</a>
+      <aside class="grid-flow-col items-center mt-5 flex">
+        <svg
+          width="36"
+          height="36"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          class="fill-current">
+          <path
+            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+        </svg>
+        <p class="pl-2">Copyright © 2024 Swapna Sarker - All right reserved</p>
+      </aside>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+      <div class="flex">
+        <a href="#" class="text-gray-500 text-2xl hover:text-gray-600 mt-14">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+          </svg>
+        </a>
+        <a href="#" class="text-gray-500 text-2xl hover:text-gray-600 mt-14 pl-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+          </svg>
+        </a>
+        <a href="#" class="text-gray-500 text-2xl hover:text-gray-600 mt-14 pl-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+          </svg>
+        </a>
+        <a href="https://github.com/yourgithub" class="text-white"><i class="fab fa-github fa-lg text-gray-500 text-2xl hover:text-gray-600 mt-14 pl-3"></i></a>
+        <a href="https://linkedin.com/in/yourlinkedin" class="text-white"><i class="fab fa-linkedin fa-lg text-gray-500 text-2xl hover:text-gray-600 mt-14 pl-3"></i></a>
+      </div>
+    </nav>
+    <form>
+      <h6 class="footer-title">Newsletter</h6>
+      <label for=""><span class="text-[19px] ">Enter your email address</span></label>
+      <div class="join">
+        <input
+          type="text"
+          placeholder="username@site.com"
+          class="input input-bordered join-item" />
+        <button class="btn btn-primary text-white join-item">Subscribe</button>
+      </div>
+    </form>
+  </footer>
+  <!-- Footer End -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
